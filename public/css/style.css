@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Piazzolla:wght@200;300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Piazzolla', serif;
+}
+
+:root {
+  --main-bg: #1e272e;
+  --main-color: #0097e6;
+}
+
+html {
+  font-size: 62.5%;
+  /* 1 rem = 10px */
+  font-family: 'Piazzolla', serif;
+}
+
+body{
+      height: 100vh;
+      flex-direction: column;
+}
+
+.row {
+  margin: 0;
+}
+
+/* navbar */
+.main_menu{
+      background-color: var(--main-bg);
+      color: #fff;
+}
+
+.navbar{
+      color: #fff;
+      padding: 2rem 0;
+      background-color: var(--main-bg);
+}
+
+.navbar li a{
+      margin-left: 2rem;
+}
+
+.navbar a{
+      color: #fff;
+      font-size: 1.8rem;
+}
+
+.navbar a:hover{
+      color: var(--main-color);
+}
+
+.navbar-toggler{
+      background-color: #fff;
+}
+.navbar-toggler:hover{
+background-color: var(--main-color);
+}
+
+.fa-snowflake{
+      color: var(--main-color);
+}
+.fa-snowflake:hover{
+      color: #fff;
+}
+
+
+/* hero section css */
+
+.main_header_left{
+      height: 70rem;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: flex-start;
+}
+
+.main_header_left p{
+      font-size: 2rem;
+
+}
+
+.main_header_left h1{
+      font-size: 4rem;
+      margin: 1rem 0;
+      text-transform: capitalize;
+}
+
+.main_header_left span{
+      color: var(--main-color);
+}
+
+.main_header_left button{
+      border: none;
+      padding: 0.8rem 1.8rem;
+      font-size: 1.4rem;
+      border-radius: 2rem;
+      text-transform: uppercase;
+      box-shadow: 0 0.8rem 0.6rem -0.6rem var(--main-color);
+      transition: 0.3s;
+      outline: none;
+}
+
+.main_header_left button:hover{
+      background-color: var(--main-color);
+      box-shadow: 0 0.8rem 0.6rem -0.6rem #000;
+}
+
+.main_header_right{
+      height: 70rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+}
+
+.main_header_right figure img{
+      filter: drop-shadow(0 0.5rem 1rem rgba(0,0,0,0.3));
+      border-bottom-right-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+}
+
+
+
+
+/* footer styles */
+footer{
+      width: 100%;
+      color: #fff;
+      background-color: var(--main-bg);
+
+      margin-top: auto;
+      margin-bottom: 0;
+
+}
+
+footer p{
+      margin: 0;
+      text-align: center;
+      color: #fff;
+      line-height: 10rem;
+      font-size: 1.4rem;
+      text-transform: capitalize;
+}
+
+/* responsive code */
+
+@media(max-width:768px){
+      .main_header_left{
+            height: auto;
+            margin: 5rem 0;
+      }
+
+      .main_header_right{
+            height: auto;
+            margin-top: 3rem;
+      }
+}
+
+/* temperature style */
+.container-fluid.main_header {
+      height: 100vh;
+    }
+    
+    .main_content .temp_form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 7rem;
+      margin-bottom: 3rem;
+    }
+    
+    .main_content .temp_form input[type="text"] {
+      padding: 0.7rem;
+      width: 20rem;
+      font-size: 2rem;
+      background-color: #2d3032;
+      border-start-start-radius: 2rem;
+      color: #fff;
+      width: 30rem;
+    }
+    
+    .main_content .temp_form input[type="submit"] {
+      padding: 0.8rem 1rem;
+      background-color: #2061cf;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 2rem;
+      border-end-end-radius: 2rem;
+    }
+    
+    .tempInformation {
+      width: 40rem;
+      margin: auto;
+      min-height: 20rem;
+      background-color: #323544;
+      border-radius: 1rem;
+    }
+    
+    .tempInformation .top_layer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #2d3032;
+      border-radius: 1rem;
+      padding: 1rem 2rem;
+    }
+    
+    .tempInformation .top_layer p {
+      color: #fff;
+      font-weight: 300;
+      font-size: 1.5rem;
+      margin: 0;
+    }
+    
+    .tempInformation .main_layer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 80%;
+    }
+    
+    .tempInformation .main_layer #city_name {
+      color: #bfc1c8;
+      font-weight: 300;
+      font-size: 2rem;
+      margin: 0;
+      padding: 1rem 2rem;
+    }
+    
+    .tempInformation .main_layer .middle_layer p {
+      font-size: 7rem;
+      font-weight: 900;
+      color: #fff;
+      margin: 0;
+    }
+    
+    .tempInformation .main_layer .middle_layer .fa {
+      color: #009ad8;
+    }
+
+    .data_hide{
+      /* visibility: hidden; */
+      transition: all 0.3s linear;
+    }

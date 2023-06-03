@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+{{>header_links}}
+
+</head>
+
+<body>
+     {{>navbar}}
+      <!-- Hero Section -->
+      <div class=" container-fluid main_header">
+            <div class="row">
+                  <div class="col-md-10 col-12 mx-auto">
+                     <div class="main_content">
+                        <form action="" class="temp_form">
+                              <input type="text" id="cityName" placeholder="Enter your city name" autocomplete="off">
+                              <input type="submit" value="search" id="submitBtn">
+                        </form>
+                     </div>
+
+                     <div class="tempInformation">
+                        <div class="top_layer">
+                              <p id="day">Tuesday</p>
+                              <p id="today_date">3 Jun</p>
+                        </div>
+                        <div class="main_layer">
+                              <p id="city_name">Get Output</p>
+                              <div class="middle_layer data_hide py-3">
+                                    <p><span id="temp">0</span><sup>0</sup>C</p>
+                                    <p id="temp_status" class="text-center"><iclass="fa-solid fa-cloud fa-beat mx-5"></i></p>
+                                    <p id="weather_main" class="text-center">Type</p>
+                              </div>
+                        </div>
+                     </div>
+                  </div>
+            </div>
+      </div>
+
+
+      <!-- Footer Section -->
+     {{>footer}}
+
+     <script src="js/main.js"></script>
+</body>
+
+</html>
